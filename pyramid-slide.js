@@ -1,24 +1,31 @@
+
 var heightElem = document.getElementById("height");
-var number = document.getElementById("output");
-//console.log(heightElem.value);
-//drawPyramid(symbol, height);
+var sliderOutput = document.getElementById("output");
+var symbolElem = document.getElementById("symbol");
 
 heightElem.addEventListener("input", function () {
-    //console.log(heightElem.value);
-    var heightStr = heightElem.value;
-    var height = parseInt(heightStr);
 
-    number.innerHTML = heightStr;
-    drawPyramid(height);
+    var height = parseInt(heightElem.value);
+
+    sliderOutput.innerHTML = heightElem.value;
+
+    drawPyramid(height, symbolElem.value);
 });
+
+symbolElem.addEventListener("change", function () {
+
+    drawPyramid(parseInt(heightElem.value), symbolElem.value);
+});
+
 
 /**
  * drawPyramid
  *
- * Renders, in the HTML document, a Mario pyramid of the specified height
+ * Renders, in the HTML document, a Mario pyramid of the specified height,
+ * and symbol.
  */
-function drawPyramid(height) {
-    console.log(height);
+function drawPyramid(height, symbol) {
+
     // first, clear the old content
     document.getElementById("pyramid").innerHTML = "";
 
@@ -36,7 +43,7 @@ function drawPyramid(height) {
             rowStr += spaceChar;
         }
         for (var i = 0; i < numBricks; i++) {
-            rowStr += "#";
+            rowStr += symbol;
         }
         //console.log(rowStr);
         // make a <p> element for this row, and insert it into the #pyramid container

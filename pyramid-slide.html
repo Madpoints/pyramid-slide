@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        #pyramid {
+            line-height: 0;
+            font-size: 30px;
+        }
+
+        body {
+            font-family: "Courier New", monospace;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pyramid Slide</h1>
+
+        <label>
+            Brick symbol:
+
+            <select id="symbol">
+              <option value="#">#</option>
+              <option value="@">@</option>
+              <option value="X">X</option>
+              <option value="$">$</option>
+            </select>
+
+        </label>
+        <label>
+            How high?
+
+            <input type="range" id="height" min="1" max="20">
+            <span id="output"></span>
+
+        </label>
+
+    <br><br>
+    <br><br>
+
+    <div id="pyramid"></div>
+
+    <script src="pyramid-slide.js"></script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+#content {
+    border-style: solid;
+    border-color: #663399;
+    background-color: #DCDCDC;
+}
+
+#inputs {
+    background-color: silver;
+    height: 50px;
+    line-height: 50px;
+}
+
+#pyramid {
+    line-height: 0;
+    font-size: 30px;
+    color: #663399;
+}
+
+body {
+    font-family: "Courier New", monospace;
+    text-align: center;
+    width: 800px;
+    margin: auto;
+    padding: 10px;
+    height: auto;
+}
+
+h1 {
+    background-color: #663399;
+    height: 100px;
+    margin: auto;
+    line-height: 100px;
+    color: silver;
+}
+
+input[type=range]{
+    -webkit-appearance: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    width: 300px;
+    height: 5px;
+    background: #ddd;
+    border: none;
+    border-radius: 3px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: #663399;
+    margin-top: -4px;
+}
+
+input[type=range]:focus {
+    outline: none;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #ccc;
+}

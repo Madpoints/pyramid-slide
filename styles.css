@@ -14,6 +14,9 @@
     line-height: 75px;
 }
 
+#output {
+    font-weight: bold;
+}
 
 #pyramid {
     line-height: 0;

@@ -1,26 +1,26 @@
 // retrieve HTML elements for height, symbol, and slider display
-var heightElem = document.getElementById("height");
+var height = document.getElementById("height");
 var sliderOutput = document.getElementById("output");
-var symbolElem = document.getElementById("symbol");
+var symbol = document.getElementById("symbol");
 
 // display initial height and pyramid using default values
-sliderOutput.innerHTML = heightElem.value;
-drawPyramid(parseInt(heightElem.value), symbolElem.value);
+sliderOutput.innerHTML = height.value;
+drawPyramid(parseInt(height.value), symbol.value);
 
 // on slider change...
-heightElem.addEventListener("input", function () {
+height.addEventListener("input", function () {
     // get the integer value of new height
-    var height = parseInt(heightElem.value);
+    var heightValue = parseInt(height.value);
     // update the height display value
-    sliderOutput.innerHTML = heightElem.value;
+    sliderOutput.innerHTML = height.value;
     // draw pyramid using updated height and current symbol
-    drawPyramid(height, symbolElem.value);
+    drawPyramid(heightValue, symbol.value);
 });
 
 //on symbol change...
-symbolElem.addEventListener("change", function () {
+symbol.addEventListener("change", function () {
     // draw pyramid using current height and updated symbol
-    drawPyramid(parseInt(heightElem.value), symbolElem.value);
+    drawPyramid(parseInt(height.value), symbol.value);
 });
 
 

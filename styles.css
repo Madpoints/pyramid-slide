@@ -1,6 +1,6 @@
 #content {
     border-style: solid;
-    border-color: #99004d;
+    border-color: #AA5588;
     background-color: #DCDCDC;
     width: 700px;
     margin: auto;
@@ -22,11 +22,11 @@
     line-height: 0;
     font-size: 30px;
     font-weight: bold;
-    color: #99004d;
+    color: #AA5588;
 }
 
 h1 {
-    background-color: #99004d;
+    background-color: #AA5588;
     border-radius: 3px;
     height: 100px;
     margin: auto;
@@ -48,10 +48,10 @@ label {
 }
 
 select {
-    color: #99004d;
+    color: #AA5588;
     font-weight: bold;
     border-radius: 3px;
-    border-color: #99004d;
+    border-color: #AA5588;
 }
 
 input[type=range]{
@@ -72,7 +72,7 @@ input[type=range]::-webkit-slider-thumb {
     height: 16px;
     width: 16px;
     border-radius: 50%;
-    background: #99004d;
+    background: #AA5588;
     margin-top: -4px;
 }
 

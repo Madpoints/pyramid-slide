@@ -45,6 +45,8 @@ label {
 
 select {
     color: #cc0066;
+    border-radius: 3px;
+    border-color: black;
 }
 
 input[type=range]{
@@ -56,7 +58,7 @@ input[type=range]::-webkit-slider-runnable-track {
     height: 5px;
     background: #ddd;
     border: none;
-    border-radius: 3px;
+    radius: 3px;
 }
 
 input[type=range]::-webkit-slider-thumb {

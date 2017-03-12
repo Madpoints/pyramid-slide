@@ -60,7 +60,7 @@ input[type=range]{
 input[type=range]::-webkit-slider-runnable-track {
     width: 300px;
     height: 5px;
-    background: #ddd;
+    background: #DCDCDC;
     border: none;
     radius: 3px;
 }
@@ -79,6 +79,6 @@ input[type=range]:focus {
     outline: none;
 }
 
-input[type=range]:focus::-webkit-slider-runnable-track {
+/*input[type=range]:focus::-webkit-slider-runnable-track {
     background: #ccc;
-}
+}*/
